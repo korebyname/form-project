@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Project</title>
+</head>
+<body>
+    <div id="outside">
+        <div>
+            <form action="/action_page.php">
+                <h1>Application For Permission To Date Me</h1>
+                <p><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Name: </label>
+                    <input type="text" required id="name" name="name" placeholder="Enter your name"> <br>
+                    <label for="address"> Address: </label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address"> <br>
+                    <label for="mail">Email: </label>
+                    <input type="email" required id="mail" name="mail" placeholder="Enter your address"> <br>
+                    <label for="number">Phone Number: </label>
+                    <input type="number" id="number" name="number" placeholder="Enter your phone number"> <br>
+                    <label for="IQ">IQ: </label>
+                    <input type="number" id="IQ" name="IQ" placeholder="Enter your IQ level"> <br>
+                    <p>Gender</p>
+                    <input type="radio" id="gender" name="gender" value="Female" checked>
+                    <label for="gender">Female</label> <br>
+                    <input type="radio" id="gender" name="gender" value="male">
+                    <label for="gender">Male</label> <br>
+                    <input type="radio" id="gender" name="gender" value="other">
+                    <label for="gender">Other</label> <br>
+                    <label for="cal">Date of Proposed Outing:</label>
+                    <input type="date" id="cal" name="cal" value="cal">
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <p>Check All That Apply</p>
+                        <input type="checkbox" id="tatto" name="tatto" value="tatto">
+                        <label for="tatto">I have tattoos and/or piercings</label> <br>
+                        <input type="checkbox" id="2years" name="2years" value="2years">
+                        <label for="2years">I am more than 2 years younger than me</label> <br>
+                        <input type="checkbox" id="car" name="car" value="car">
+                        <label for="car">I own a panel van or V8 ute</label> <br>
+                        <input type="checkbox" id="work_time" name="work_time" value="work_time" checked>
+                        <label for="work_time">I work full-time</label><br>
+                        <input type="checkbox" id="rich parent" name="rich parent" value="rich parent" checked>
+                        <label for="rich parent">My parents are rich</label><br>
+                        <input type="checkbox" id="date location" name="date location" value="date location" checked>
+                        <label for="date location">Is the date at a well lit public location</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label for="politics">Political Persuasion:</label>
+                        <select name="politics" id="politics">
+                            <option value="Left Wing">Left Wing</option>
+                            <option value="Right Wing">Right Wing</option>
+                            <option value="Conservative">Conservative</option>
+                            <option value="Nazi">Nazi</option>
+                        </select>
+                        <label for="education_level">Education Level Completed:</label>
+                        <select name="education_level" id="education_level">
+                            <option value="university" selected>University</option>
+                            <option value="college">College</option>
+                            <option value="high_school">High School</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <fieldset>
+                        <legend>Essay Section</legend>
+                        <p>In 50 words or more explain why you want to date me</p>
+                        <textarea name="Essay" id="essay" cols="40" rows="3" placeholder="Write your essay here"></textarea>
+                        <p>Please upload contact details for 2 references</p>
+                        <textarea name="refrence" id="refrence" cols="40" rows="3"></textarea>
+                        <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+                        <button type="button">Attach file</button></p>
+                    </fieldset>
+                </div>
+                <div class="submit_button">
+                    <button type="submit">Send your application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
